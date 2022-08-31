@@ -486,7 +486,7 @@ address {
 }
 
 .footer-contakt-link .contakt-links:hover,
-.footer-contakt-link .contakt-links :focus {
+.footer-contakt-link .contakt-links:focus {
   color: var(--color-buton);
 }
 
