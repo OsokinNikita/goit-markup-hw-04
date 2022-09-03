@@ -85,6 +85,7 @@ address {
 }
 
 .logo {
+  display: flex;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -137,6 +138,10 @@ address {
   letter-spacing: 0.02em;
 }
 
+.nav-link:focus {
+  color: var(--color-buton);
+}
+
 .nav-link.current {
   color: var(--color-buton);
 }
@@ -154,9 +159,10 @@ address {
 }
 
 .contakt-link {
-  display: inline-flex;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: baseline;
 }
 
 .heder-contakt-link .contakt-link {
@@ -165,6 +171,11 @@ address {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+}
+
+.heder-soc-icon {
+  fill: rgba(117, 117, 117, 1);
+  margin-right: 10px;
 }
 
 .heder-contakt-link .contakt-link:hover,
@@ -176,14 +187,14 @@ address {
   letter-spacing: 0.02em;
 }
 
+.contakt-link:hover,
+.contakt-link:focus {
+  color: #2196f3;
+}
+
 .contakt-link:hover .heder-soc-icon,
 .contakt-link:focus .heder-soc-icon {
   fill: #2196f3;
-}
-
-.heder-soc-icon {
-  fill: rgba(117, 117, 117, 1);
-  margin-right: 10px;
 }
 
 /* ///////////////////////MAIN///////////////// */
@@ -310,6 +321,7 @@ address {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .features-list {
@@ -406,7 +418,6 @@ address {
 .client-logo {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   margin-bottom: 94px;
 }
 
@@ -462,17 +473,18 @@ address {
 }
 
 .adress {
+  display: flex;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  margin-top: 20px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--color-wite);
 }
 
-/* .footer-contakt-link {
-} */
+.footer-contakt-link {
+  margin-top: 20px;
+}
 
 /* .contakt-links {
 } */
@@ -491,7 +503,7 @@ address {
 }
 
 .footer-item {
-  color: var(--color-wite);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-item:not(:last-child) {
@@ -504,6 +516,7 @@ address {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: var(--color-wite);
 }
 
 .footer-link {
@@ -666,4 +679,14 @@ address {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--color-text);
+}
+
+.portfolio-card-item-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.portfolio-card-item-link:hover,
+.portfolio-card-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
